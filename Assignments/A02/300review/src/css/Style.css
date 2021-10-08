@@ -3,14 +3,21 @@
 
 /*needs normalize.css
  */
-.canvas{
-
-        background: linear-gradient(0deg, rgba(00,00,00,1) 0%, rgb(45, 0, 0) 65%, rgb(110, 0, 0) 100%);
+body{
+    position: static;
+    background-right: no-repeat;
+    background: linear-gradient(0deg, rgba(00, 00, 00, 1) 0%, rgb(45, 0, 0) 65%, rgb(110, 0, 0) 100%) fixed center;
     height: 100vh;
-    width: 100vh;
-    max-width: 100%;
-    align-content: center;
 
+    max-width: 100vw;
+    align-content: center;
+    text-align: center;
+    display: block;
+
+}
+page{
+
+    margin: 1vw;
 }
 .heading{
     font-family: "Trebuchet MS", sans-serif;
@@ -18,6 +25,7 @@
     padding: 0 3% 0 3%;
 
 }
+
 .image_container{
     width: 90%;
     height: 90%;
@@ -39,11 +47,10 @@ padding-top: 5%;
     font-size: 1em;
 }
 .MainPage {
-    background-color: #FFFFFF;
-
-
-
-
+    background-color: rgba(206, 206, 206, 0.99);
+    margin: 0 auto;
+    display: block;
+    max-width: 90vw;
 
 
 
@@ -105,6 +112,7 @@ position: absolute;
 }
 
 .centered{
+    text-align: center;
 
 }
 .caption{
@@ -116,8 +124,37 @@ position: absolute;
 body{
 
 }
+.long_quote{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
 @media only screen and (max-width: 63em){
 
+}
+
+@media only screen and (min-width: 2700px) {
+    .canZoom {
+        font-size: 4em;
+    }
+    .cantZoom{
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 3900px) {
+    .canZoom {
+        font-size: 3em;
+    }
+    .cantZoom{
+        font-size: 1em;
+    }
+
+}
+
+@viewport {
+    max-zoom: auto;
+    min-zoom: 1;
 }
