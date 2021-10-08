@@ -1,0 +1,61 @@
+
+
+
+/*needs normalize.css
+ */
+.background{
+    width: 100%;
+    height: auto;
+}
+
+
+.canvas{
+    background-image: image("images/background.webp");
+    width: 1200px;
+    height: 793px;
+}
+.device_indicator{
+
+
+
+    min-height: 15%;
+    max-height: 15%;
+    width: 100%;
+    max-width: 100%;
+
+    text-align: left;
+
+
+}
+.container{
+    display: flex;
+    color: white;
+    position: fixed;
+    background-color: #2524249E;
+    align-items: center;
+}
+img.background{
+    min-width: 100%;
+    position: fixed;
+
+}
+.verse{
+
+
+    margin: 25% 60% 20% 5%;
+    text-align: center;
+    width: 35%;
+    height: 50%;
+    padding-left: 2em;
+}
+h1{
+    font-size: 20px;
+    vertical-align: center;
+    font-family: Oxygen, sans-serif;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 63em){
+
+}
