@@ -6,41 +6,54 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>StormyWeather</title>
+    <title>Stormy Weather</title>
     <link rel="stylesheet" href="src/css/Style.css" type="">
-    <link rel="icon" href="images/xerxes.webp" type="image/x-icon">
+    <link rel="icon" href="images/background.webp" type="image/x-icon">
 
 </head>
 
-<body>
 
-<div class="canvas">
+
+<body>
     <img class="background" src="images/background.webp">
-    <div class="device_indicator container">
-        <h1>Stormy Weather</h1>
+    <div class="device_Banner container">
+        <div class="storyWeather">Stormy Weather</div>
+
+        <div class="icon_tray">
+            <img class="icon mobile" id="mobileIcon" src="images/mobile.webp">
+            <img class="icon tablet" id="tabletIcon" src="images/tablet.webp">
+            <img class="icon pc" id="pcIcon" src="images/display.webp" onclick="fall(this)">
+        </div>
     </div>
+    <div class="mainContent">
+
+
     <div class="verse container">
-       <p> Life is bare
-        Gloom and misery everywhere
-        Stormy Weather
-        Just can't get my poor old self together
-        I'm weary all the time
-        <br>
-        Every time
-        So weary all of the time
-        When she went away
-        The blues walked in and then they met me
-        If she stays away
-        That old rocking chair's bound to get me
+       <p>
+           Life is bare<br>
+           Gloom and mis'ry everywhere<br>
+           Stormy Weather<br>
+           Just can't get my poor old self together<br>
+           I'm weary all the time<br>
+           Every time<br>
+           So weary all of the time<br><br>
+           When she went away<br>
+           The blues walked in and then they met me<br>
+           If he stays away<br>
+           That old rocking chair's bound to get me<br>
+
        </p>
     </div>
-</div>
+    </div>
+
+
 
 </body>
 <footer>
-Victor Harris -- CIS111 Assignment A02 10/07/2021
-</footer>
 
+</footer>
+<script src="script.js"></script>
 </html>
+
 
 <!-- it is a best practice to keep comments in the source section-->
