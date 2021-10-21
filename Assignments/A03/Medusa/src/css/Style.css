@@ -1,0 +1,252 @@
+
+:root{
+    --main-color: rgba(206, 206, 206, 0.99);
+    --header-color: rgba(255, 255, 255, 0.98);
+    --border-color: #eaeaea;
+    --font-size: 1.2em;
+}
+@font-face {
+    font-family: 'Aspira';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf') format('opentype');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JaneAusten';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff') format('woff'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pesaro';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.otf') format('opentype');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+div{
+    position: relative;
+    margin: 1% auto;
+}
+.section{
+    display: block;
+}
+#top{
+    height: 10%;
+    margin: 2%;
+}
+header{
+    display: inline;
+
+    margin-top: 2em;
+}
+h1{
+    margin-top: 1.8em;
+    display: inline;
+
+}
+.side{
+
+    display: inline;
+
+    border: yellow .04em solid;
+    text-align: center;
+    horiz-align: center;
+    margin: 1em;
+    transform: rotate(-90deg);
+
+}
+#side1{
+    display: inline;
+margin: 10px auto;
+width: 20%;
+
+}
+#side2{
+    display: inline;
+    margin: 10px auto;
+    width: 20%;
+}
+#middle{
+    display: block;
+    height: auto;
+    max-height: 62vh;
+}
+.mainContent{
+    display: inline;
+    position: relative;
+    border: yellow .2em solid;
+    width: 70%;
+    height: 70%;
+    max-height: 80vh;
+
+
+
+
+}
+.mainContent img{
+    width: 40%;
+    height: auto;
+}
+body{
+    position: fixed;
+    align-content: center;
+    height: 1080px;
+    width: 480px;
+    border: black .2em solid;
+}
+.title {
+    font-family: Pesaro, Arial, sans-serif;
+    font-size: 10em;
+}
+.titleHead{
+    height: 17%;
+}
+#bottom{
+   height: 20%;
+}
+img{
+
+}
+
+
+
+
+
+#jellyfish{
+    width: auto;
+    height: auto;
+}
+.caption {
+    font-family: JaneAusten, sans-serif;
+    color: #919170; font-size: 1.1rem;
+    transform: rotate(-90deg) translate(20em, 16em);
+}
+@media screen and (max-width: 750px) {
+    figure img { width: 80%; }
+    figure figcaption { transform: none; }
+    main { margin-top: 0; }
+}
+@media screen and (max-width: 650px) {
+    figure figcaption { transform: none; }
+    header { flex-direction: column; }
+    header h2 { width: 100%; margin-top: 1rem; }
+    figure figcaption { margin-left: -20%; }
+}
+@media screen and (max-width: 550px) {
+    main { flex-direction: column; }
+    h1 span#volume {
+        transform: none;
+        margin: 0; display: inline;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    h1 span#issue {
+        display: inline;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    h1#issue-info {
+        width: 95%;
+        line-height: 0;
+        text-align: right;
+        margin: 0;
+    }
+    h1 span#issue sup {
+        font-size: .1rem;
+        line-height: 0;
+    }
+    h1 span#number { padding-left: 1rem; }
+    figure img { width: 60%; margin-top: -2rem; }
+    figure figcaption { display: none; }
+    header { margin-bottom: 0; }
+    header h1 { font-size: 4rem; text-align: center; }
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1080px) {
+    .section {
+        max-width: 1200px;
+    }
+}
+@media only screen and (max-width: 480px){
+   .section{
+       min-width: 90%;
+       font-size: var(--font-size)/2;
+
+}
+}
+
+
+
+
+
+
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2021 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      exljbris Font Foundry
+ * License URL: https://www.fontspring.com/licenses/exljbris/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'MuseoSans_500';
+    src: url('src/WebFonts/Fonts/MuseoSans_500.woff2') format('woff2'),
+    url('src/WebFonts/Fonts/MuseoSans_500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
