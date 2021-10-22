@@ -93,9 +93,12 @@ width: 20%;
 body{
     position: fixed;
     align-content: center;
-    height: 1080px;
-    width: 480px;
+
     border: black .2em solid;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
 }
 .title {
     font-family: Pesaro, Arial, sans-serif;
