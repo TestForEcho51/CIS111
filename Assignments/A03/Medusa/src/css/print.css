@@ -1,31 +1,30 @@
 @media print {
 
-    body{
-    background-color: #FFFFFF;
+    body {
+        background-color: #FFFFFF;
+        height: auto;
+        margin: 0;
+        text-align: center;
     }
-    .pText{
+
+    html{
+        margin: 1cm;
 
     }
-    .topImage {
-        position: static;
-        page-break-after: auto;
-        padding: 30px;
-        margin: 0 0 2cm 0;
+    .row{
+        border: unset;
+        display: grid;
     }
-    .title_container{
-        margin: 2cm;
-        padding: 2cm;
+    .turn90{
+        writing-mode: unset;
+        text-orientation: unset;
+        transform: unset;
     }
-.section{
-    page-break-inside: avoid;
-    width: 100%;
-    margin-left: 2cm;
-    margin-right: 2cm;
-}
-    #survey{
-        display: none;
+    #date{
+        bottom: 0;
     }
-    .pullQuote{
-        page-break-inside: avoid;
+    :root{
+        --max-height: 100%;
+        --max-width: 100%;
     }
 }

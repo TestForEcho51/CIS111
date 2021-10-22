@@ -4,6 +4,13 @@
     --header-color: rgba(255, 255, 255, 0.98);
     --border-color: #eaeaea;
     --font-size: 1.2em;
+    --max-height: 94vh;
+    --max-width: calc(var(--max-height) *.6);
+    --top-row: calc(var(--max-height) *.16);
+    --middle-row: calc(var(--max-height) *.8);
+    --bottom-row: calc(var(--max-height) *.03);
+    --border-color: rgba(35, 35, 35, 0.85);
+    --caption-color: #a19797;
 }
 @font-face {
     font-family: 'Aspira';
@@ -26,147 +33,144 @@
     font-weight: normal;
     font-style: normal;
 }
-div{
-    position: relative;
-    margin: 1% auto;
+html, body {
+    height: var(--max-height);
 }
-.section{
-    display: block;
-}
-#top{
-    height: 10%;
-    margin: 2%;
-}
-header{
-    display: inline;
 
-    margin-top: 2em;
-}
-h1{
-    margin-top: 1.8em;
-    display: inline;
-
-}
-.side{
-
-    display: inline;
-
-    border: yellow .04em solid;
-    text-align: center;
-    horiz-align: center;
-    margin: 1em;
-    transform: rotate(-90deg);
-
-}
-#side1{
-    display: inline;
-margin: 10px auto;
-width: 20%;
-
-}
-#side2{
-    display: inline;
-    margin: 10px auto;
-    width: 20%;
-}
-#middle{
-    display: block;
-    height: auto;
-    max-height: 62vh;
-}
-.mainContent{
-    display: inline;
-    position: relative;
-    border: yellow .2em solid;
-    width: 70%;
-    height: 70%;
-    max-height: 80vh;
-
-
-
-
-}
-.mainContent img{
-    width: 40%;
-    height: auto;
-}
-body{
+html{
     position: fixed;
-    align-content: center;
+    left: 1%;
+    right: 1%;
+    width: var(--max-width);
+    max-height: var(--max-height);
+    height: var(--max-height);
 
-    border: black .2em solid;
-    top: 0;
+    margin: .1em auto;
+
+}
+
+body {
+    display: table;
+    margin: .02em auto;
+    border: black solid .07em;
     bottom: 0;
-    left: 5%;
-    right: 5%;
-}
-.title {
+    height: auto;
     font-family: Pesaro, Arial, sans-serif;
-    font-size: 10em;
+;
 }
-.titleHead{
-    height: 17%;
+.row{
+    display: flex;
+    flex-direction: row;
 }
-#bottom{
-   height: 20%;
+
+.gridItem{
+    flex: 4;
+    align-self: center;
+}
+.top{
+    top: 0;
+}
+#journal{
+    padding: .4em;
+    text-align: center;
+    border-top: var(--border-color) .03em ridge;
+    border-bottom: var(--border-color) .03em ridge;
+    margin-left: .4em;
+    font-size: .8em;
+    font-family: Aspira, Arial, sans-serif;
+}
+#medusa{
+    font-size: 3.5em;
+    padding-right: .3em;
+
+}
+.middle{
+    color: var(--caption-color);
+
+
+}
+#leftCaption{
+    flex:.8;
+    text-align-all: center;
+}
+#volume{
+    font-size: 2.6em;
+
+}
+#jelly{
+    flex: 2;
+    margin-right: 5%;
+
+}
+#rightCaption{
+    flex: .7;
+    font-family: JaneAusten, sans-serif;
+    font-size: .7em;
+
+}
+.bottom{
+    bottom: 0;
+    flex: 1;
+
+}
+#date{
+    text-align: center;
+    border-top: 2px var(--border-color) solid;
+    border-bottom: 2px var(--border-color) solid;
+    padding: 1%;
+    bottom: 0;
+    alignment: bottom;
+    font-family: Aspira, Arial, sans-serif;
+
+}
+
+
+slice{
+
+}
+.turn90{
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+
+    text-orientation: mixed;
+}
+.turn90 .span{
+
 }
 img{
-
-}
-
-
-
-
-
-#jellyfish{
-    width: auto;
+    position: relative;
+    margin: 0 auto;
     height: auto;
+    max-width: 100%;
 }
-.caption {
-    font-family: JaneAusten, sans-serif;
-    color: #919170; font-size: 1.1rem;
-    transform: rotate(-90deg) translate(20em, 16em);
-}
-@media screen and (max-width: 750px) {
-    figure img { width: 80%; }
-    figure figcaption { transform: none; }
-    main { margin-top: 0; }
-}
-@media screen and (max-width: 650px) {
-    figure figcaption { transform: none; }
-    header { flex-direction: column; }
-    header h2 { width: 100%; margin-top: 1rem; }
-    figure figcaption { margin-left: -20%; }
-}
-@media screen and (max-width: 550px) {
-    main { flex-direction: column; }
-    h1 span#volume {
-        transform: none;
-        margin: 0; display: inline;
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-    h1 span#issue {
-        display: inline;
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #FFFFFF;
+        height: auto;
         margin: 0;
-        font-size: 1.2rem;
-        font-weight: 100;
+        text-align: center;
     }
-    h1#issue-info {
-        width: 95%;
-        line-height: 0;
-        text-align: right;
-        margin: 0;
+
+    html{
+        margin: 1cm;
+
     }
-    h1 span#issue sup {
-        font-size: .1rem;
-        line-height: 0;
+    .row{
+        border: unset;
+        display: grid;
     }
-    h1 span#number { padding-left: 1rem; }
-    figure img { width: 60%; margin-top: -2rem; }
-    figure figcaption { display: none; }
-    header { margin-bottom: 0; }
-    header h1 { font-size: 4rem; text-align: center; }
+    .turn90{
+        writing-mode: unset;
+        text-orientation: unset;
+        transform: unset;
+    }
+    #date{
+        bottom: 0;
+    }
+    :root{
+    --max-width: 80vw;
+    }
+
 }
 
 .hidden{
@@ -220,36 +224,3 @@ img{
 
 
 
-
-/*!
- * Web Fonts from Fontspring.com
- *
- * All OpenType features and all extended glyphs have been removed.
- * Fully installable fonts can be purchased at http://www.fontspring.com
- *
- * The fonts included in this stylesheet are subject to the End User License you purchased
- * from Fontspring. The fonts are protected under domestic and international trademark and
- * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
- * distributing this font software.
- *
- * (c) 2010-2021 Fontspring
- *
- *
- *
- *
- * The fonts included are copyrighted by the vendor listed below.
- *
- * Vendor:      exljbris Font Foundry
- * License URL: https://www.fontspring.com/licenses/exljbris/webfont
- *
- *
- */
-
-@font-face {
-    font-family: 'MuseoSans_500';
-    src: url('src/WebFonts/Fonts/MuseoSans_500.woff2') format('woff2'),
-    url('src/WebFonts/Fonts/MuseoSans_500.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
